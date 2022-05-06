@@ -1,0 +1,67 @@
+.footer{
+  background-color: $secondary-color;
+  overflow: hidden;
+
+  &-container{
+    padding: 2rem 6rem;
+    @include flexSpaceBetween;
+
+    &__list-div{
+      @include justFlex;
+
+      &__logos{
+        @include flexColumnSpace;
+        
+      }
+      &__social-logos{
+        ul{
+          @include justFlex;
+
+          li{
+            padding-right: 0.5rem;
+            i{
+              font-size: 1.5rem;
+              color: $white;
+              cursor: pointer;
+
+              &:hover{
+                color: $primary-btnColor;
+              }
+            }
+          }
+        }
+      }
+      &__items{
+
+        ul{
+          padding-left:9rem;
+
+          li{
+            padding: 0.5rem 0;
+
+            a{
+              font-weight: weight(light);
+              color: $white;
+              font-size: 0.9rem;
+
+              &:hover{
+                color: $primary-btnColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__btn-div{
+      button{
+        margin-bottom: 2rem;
+      }
+      p{
+        font-size: 0.9rem;
+        color: $primary-color;
+        font-weight: weight(light);
+      }
+    }
+  }
+}

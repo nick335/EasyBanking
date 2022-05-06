@@ -1,0 +1,29 @@
+// Reset!!!
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+//Vairables
+$primary-color:hsl(233, 8%, 62%);
+$secondary-color:hsl(233, 26%, 24%);
+$primary-backgroundColor:hsl(0, 0%, 98%);
+$secondary-backgroundColor:hsl(220, 16%, 96%);
+$primary-btnColor:hsl(136, 65%, 51%);
+$secondary-btnColor:hsl(192, 70%, 51%);
+$white:hsl(0, 0%, 100%);
+$font-weights: (
+ "light":300,
+ "regular":400,
+ "Bold":700
+);
+//font-family: 'Public Sans', sans-serif;
+
+//media Queries
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 915px)";
+$media-mini-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 414px)";
+$media-mobile-xsm: "only screen and (max-width : 375px)";
+$media-mobile-xxsm: "only screen and (max-width : 371px)";

@@ -1,0 +1,43 @@
+//mixins
+@mixin flexSpaceBetween {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+@mixin flexCenter {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flexColumn{
+ display: flex;
+ flex-direction: column;
+}
+
+@mixin flexColumnReverse {
+ display: flex;
+ flex-direction: column-reverse;
+}
+
+@mixin grid4 {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin grid1{
+ display: grid;
+ grid-template-columns: 1fr;
+}
+
+@mixin justFlex{
+  display: flex;
+}
+
+@mixin flexColumnSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}

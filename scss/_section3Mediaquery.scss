@@ -1,0 +1,36 @@
+@media #{$media-desktop}{
+ .section3{
+  &-container{
+   padding: 3rem;
+
+   &__grid-div{
+    grid-gap: 1.2rem;
+   }
+  }
+ }
+}
+
+@media #{$media-mobile}{
+ .section3{
+  &-container{
+   padding: 3rem 1.5rem;
+
+   &__header-div{
+
+    h3{
+     text-align: center;
+    }
+   }
+
+   &__grid-div{
+    @include grid1;
+    grid-gap: 0rem;
+
+    &__box{
+     margin-bottom: 1.5rem;
+     
+    }
+   }
+  }
+ }
+}

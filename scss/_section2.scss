@@ -1,0 +1,44 @@
+@import 'mixins';
+@import 'functions';
+
+.section2{
+ background: $secondary-backgroundColor;
+
+ &-container{
+  padding:6rem 6rem;
+
+  &__header-div{
+   h2{
+    font-size: 2.5rem;
+    color: $secondary-color;
+    font-weight: weight(light);
+   }
+
+   p{
+    color: $primary-color;
+    margin-right: 29rem;
+    padding: 1.5rem 0;
+   }
+  }
+  &__grid-div{
+   @include grid4;
+   grid-gap: 1rem;
+   padding-top: 2rem;
+   
+   h3{
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: weight(regular);
+    color: $secondary-color;
+   }
+
+   p{
+    color: $primary-color;
+    font-weight: weight(regular);
+    font-size: 1.0515rem;
+    line-height: 1.5;
+   }
+  }
+
+ }
+}

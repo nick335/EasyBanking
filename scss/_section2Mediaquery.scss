@@ -1,0 +1,46 @@
+@import 'mixins';
+@import 'functions';
+
+@media #{$media-desktop}{
+ .section2{
+
+  &-container{
+   padding: 6rem 3rem;
+
+   &__header-div{
+    p{
+     margin-right: 20rem;
+    }
+   }
+  }
+ }
+}
+
+@media #{$media-mobile}{
+ .section2{
+
+  &-container{
+   padding: 3rem 1.5rem;
+   &__header-div{
+    h2{
+     text-align: center;
+    }
+    p{
+     margin-right: 0rem;
+     text-align: center;
+     line-height: 1.6;
+    }
+   }
+
+   &__grid-div{
+    @include grid1;
+    grid-gap:  0;
+    text-align: center;
+
+    &__box{
+     padding-bottom: 2rem;
+    }
+   }
+  }
+ }
+}

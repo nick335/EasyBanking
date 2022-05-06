@@ -1,0 +1,52 @@
+// navbar
+.header{
+ background-color: $white;
+ position: sticky;
+ z-index: 1000000;
+ top:0;
+
+ .navbar{
+  @include flexSpaceBetween;
+  padding: 1rem 6rem;
+  // overflow: hidden;
+  z-index: 100;
+
+  &_list{
+
+   &-items{
+    @include flexCenter;
+   }
+   &-item{
+    margin: 0 1rem;
+    color: $primary-color;
+    font-weight: weight(regular);
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+
+    &::after{
+     content: '';
+     position: absolute;
+     width: 120%;
+     transform: scaleX(0);
+     height: 4px;
+     bottom: 0;
+     left: 0;
+     top: 38px;
+     background: -webkit-linear-gradient(to right, $primary-btnColor,  $secondary-btnColor); /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, $primary-btnColor, $secondary-btnColor);
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
+    }
+    &:hover::after{
+     transform: scaleX(1);
+     transform-origin: bottom left;
+    }
+   }
+  
+  }
+  &_toggle{
+   display: none;
+  }
+ }
+}

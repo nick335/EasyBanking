@@ -1,0 +1,32 @@
+@import 'config';
+//utility class
+body{
+ overflow-x: hidden;
+ font-family: 'Public Sans', sans-serif;
+ font-size: 1.1rem;
+ // background: red;
+}
+
+a{
+ text-decoration: none;
+}
+
+li{
+ list-style: none;
+}
+.btn{
+ border: none;
+ outline: none;
+ cursor: pointer;
+}
+.btn-primary{
+ padding: 0.9rem 2.3rem;
+ border-radius: 50px;
+ background: -webkit-linear-gradient(to right, $primary-btnColor,  $secondary-btnColor); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, $primary-btnColor, $secondary-btnColor); 
+ color: $white;
+
+ &:hover{
+  opacity: 0.8;
+ }
+}

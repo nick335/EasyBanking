@@ -1,0 +1,47 @@
+.main{
+ overflow: hidden;
+ .hero-section{
+  background: $primary-backgroundColor;
+  padding-left: 6rem;
+
+ 
+  &__container{
+   @include flexCenter;
+   height: 90vh;
+   position: relative;
+
+   &-content{
+    // padding-right: 7rem;
+    h1{
+     font-size: 3rem;
+     color: $secondary-color;
+     font-weight: weight(Bold);
+    }
+    p{
+     color: $primary-color;
+     line-height: 1.5;
+     padding: 1.5rem 0;
+    }
+   }
+
+   &-img{
+    background: url('../images/bg-intro-desktop.svg');
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-position: right -300px top -215px;
+    z-index: 10;
+    height: 100%;
+    width: 120vw;
+    padding-left: 14rem;
+
+    img{
+     margin-top: -120px;
+     height: 850px;
+     // margin-right: -740px;
+     position: absolute;
+     right: -130px;
+    }
+   }
+  }
+ }
+}
