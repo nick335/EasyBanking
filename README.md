@@ -31,7 +31,7 @@ Users should be able to:
 ![].(dist/images/Screenshot-Easy-Banking.png)
 
 ### Links
-- Solution URL: [solution.com](https://github.com/nick335/)
+- Solution URL: [solution.com](https://github.com/nick335/EasyBanking)
 - Live Site URL: [sunny.com](https://nick335.github.io/)
 
 ## My process
